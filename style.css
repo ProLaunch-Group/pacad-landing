@@ -247,6 +247,20 @@ section {
     padding: 70px 5%;
 }
 
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-subtext {
+    color: #1E3A6E;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 650px;
+}
+
 .section-label {
     color: #6C3CE1;
 
@@ -599,7 +613,7 @@ section h2 {
 .footer-logo {
     width: 150px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .footer-brand p {
@@ -607,8 +621,15 @@ section h2 {
     color: #D9E1F0;
     font-size: 14px;
     line-height: 1.7;
-    margin: 0;
+    margin-bottom: 12px;
 }
+
+.footer-subsidiary {
+    font-size: 12px;
+    color: #F5A623;
+    letter-spacing: 0.3px;
+}
+
 
 /* Socials */
 
@@ -1375,6 +1396,12 @@ section h2 {
     box-shadow: 0 8px 25px rgba(245, 166, 35, 0.15) !important;
 }
 
+.cloud-icon,
+.featured-cloud .programme-icon {
+    background-color: #EDE9FF !important;
+    color: #6C3CE1 !important;
+}
+
 .special-perk-box {
     background-color: #FFFBEB;
     border: 1px solid #FDE68A;
@@ -1425,15 +1452,16 @@ section h2 {
     gap: 6px;
 }
 
+/* Primary Purple fill with White text */
 .skill-pill {
     display: inline-block;
     font-size: 11px;
-    font-weight: 600;
-    background-color: #EDE9FF;
-    color: #4A21A8;
-    padding: 3px 9px;
+    font-weight: 700;
+    background-color: #6C3CE1;
+    color: #FFFFFF;
+    padding: 4px 10px;
     border-radius: 6px;
-    border: 1px solid #D8CEFF;
+    border: none;
 }
 
 .card-perks-list {
