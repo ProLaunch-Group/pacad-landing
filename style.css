@@ -50,15 +50,27 @@ header {
     z-index: 1000;
 }
 
+/* =========================
+   NAVBAR ALIGNMENT CONTAINER
+   ========================= */
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 100%;
+}
+
 .navbar {
     min-height: 70px;
-    padding: 15px 5%;
+    padding: 18px 0;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     position: relative;
+    width: 100%;
 }
 
 
@@ -67,6 +79,7 @@ header {
 .logo img {
     width: 145px;
     height: auto;
+    display: block;
 }
 
 
@@ -154,7 +167,7 @@ header {
    ========================= */
 
 .hero {
-    padding: 60px 5% 70px;
+    padding: 50px 5% 60px;
 
     background-color: #EDE9FF;
 
@@ -181,7 +194,7 @@ header {
 .hero h1 {
     color: #1E3A6E;
 
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1.15;
 
     margin-bottom: 20px;
@@ -193,10 +206,11 @@ header {
     color: #6C3CE1;
 }
 
-.hero-text {
+.hero p {
     color: #1E3A6E;
 
     font-size: 16px;
+    line-height: 1.6;
 
     margin-bottom: 30px;
 
@@ -244,7 +258,7 @@ header {
    ========================= */
 
 section {
-    padding: 70px 5%;
+    padding: 55px 5%;
 }
 
 .section-container {
@@ -257,7 +271,7 @@ section {
     color: #1E3A6E;
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     max-width: 650px;
 }
 
@@ -296,7 +310,7 @@ section h2 {
 /* About image */
 
 .about-image {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .about-image img {
@@ -1330,12 +1344,18 @@ section h2 {
 .footer-brand {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .footer-logo {
-    width: 150px;
+    width: 155px;
     height: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -4px;
+    display: block;
+    object-fit: contain;
 }
 
 .footer-brand p {
@@ -1343,6 +1363,7 @@ section h2 {
     font-size: 14px;
     line-height: 1.6;
     max-width: 320px;
+    margin-bottom: 4px;
 }
 
 .footer-subsidiary {
