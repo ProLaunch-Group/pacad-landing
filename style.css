@@ -1441,3 +1441,108 @@ section h2 {
 .footer-bottom-links a:hover {
     color: #F5A623;
 }
+
+
+/* =========================
+   DIGITAL LEARNING MASCOTS (NOVA & JULIAN)
+   ========================= */
+
+/* Hero Mascot Greeting */
+.mascot-greeting {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8CEFF;
+    padding: 8px 18px 8px 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(108, 60, 225, 0.1);
+}
+
+.mascot-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6C3CE1;
+    flex-shrink: 0;
+}
+
+.mascot-bubble {
+    display: flex;
+    flex-direction: column;
+}
+
+.mascot-name {
+    font-size: 13px;
+    color: #4A21A8;
+}
+
+.mascot-sub {
+    font-size: 12px;
+    color: #64748B;
+    margin: 0 !important;
+}
+
+/* Workshop Card Mascot Header */
+.card-mascot-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.card-mascot-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F5A623;
+    flex-shrink: 0;
+}
+
+.card-mascot-header h3 {
+    margin: 4px 0 0;
+}
+
+/* Special Perk Box Mascot (Cloud Card) */
+.special-perk-box.mascot-perk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.perk-text-content {
+    flex: 1;
+}
+
+.perk-mascot-avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F5A623;
+    flex-shrink: 0;
+}
+
+/* Benefit Card Mascot (Milestone Badges) */
+.mascot-feature-card {
+    position: relative;
+}
+
+.mascot-card-badge {
+    margin-top: 14px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #EDE9FF;
+}
+
+.badge-mascot-img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
