@@ -1490,30 +1490,37 @@ section h2 {
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
-    min-height: 290px;
+    min-height: 330px;
     padding: 30px;
 }
 
-.banner-card-content {
+.banner-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.banner-card-text {
     flex: 1;
     max-width: 60%;
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .banner-mascot-wrapper {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 42%;
-    height: 100%;
+    top: -30px;
+    right: -30px;
+    bottom: -10px;
+    width: 45%;
+    height: calc(100% + 20px);
     overflow: hidden;
     pointer-events: none;
     z-index: 1;
@@ -1526,30 +1533,44 @@ section h2 {
     object-position: top center;
     opacity: 0.95;
     transition: transform 0.4s ease;
-    mask-image: linear-gradient(to right, transparent 0%, black 25%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+    mask-image: linear-gradient(to right, transparent 0%, black 20%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
 }
 
 .detail-card.banner-card:hover .banner-mascot-img {
     transform: scale(1.05);
 }
 
+.banner-cta-btn {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
 @media (max-width: 768px) {
     .detail-card.banner-card {
-        flex-direction: column;
         padding: 24px;
         min-height: auto;
     }
 
-    .banner-card-content {
+    .banner-card-top {
+        flex-direction: column;
+    }
+
+    .banner-card-text {
         max-width: 100%;
     }
 
     .banner-mascot-wrapper {
         position: relative;
+        top: 0;
+        right: 0;
         width: 100%;
         height: 220px;
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         border-radius: 12px;
     }
 
