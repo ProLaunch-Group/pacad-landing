@@ -1485,64 +1485,77 @@ section h2 {
     margin: 0 !important;
 }
 
-/* Workshop Card Mascot Header */
-.card-mascot-header {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 16px;
-}
-
-.card-mascot-img {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #F5A623;
-    flex-shrink: 0;
-}
-
-.card-mascot-header h3 {
-    margin: 4px 0 0;
-}
-
-/* Special Perk Box Mascot (Cloud Card) */
-.special-perk-box.mascot-perk {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-.perk-text-content {
-    flex: 1;
-}
-
-.perk-mascot-avatar {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #F5A623;
-    flex-shrink: 0;
-}
-
-/* Benefit Card Mascot (Milestone Badges) */
-.mascot-feature-card {
+/* Prominent Banner Cards (Workshop & Cohort 1) */
+.detail-card.banner-card {
     position: relative;
-}
-
-.mascot-card-badge {
-    margin-top: 14px;
-    border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #EDE9FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 290px;
+    padding: 30px;
 }
 
-.badge-mascot-img {
+.banner-card-content {
+    flex: 1;
+    max-width: 60%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-mascot-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 42%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.banner-mascot-img {
     width: 100%;
-    height: 125px;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 10px;
+    object-position: top center;
+    opacity: 0.95;
+    transition: transform 0.4s ease;
+    mask-image: linear-gradient(to right, transparent 0%, black 25%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+}
+
+.detail-card.banner-card:hover .banner-mascot-img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .detail-card.banner-card {
+        flex-direction: column;
+        padding: 24px;
+        min-height: auto;
+    }
+
+    .banner-card-content {
+        max-width: 100%;
+    }
+
+    .banner-mascot-wrapper {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        margin-top: 20px;
+        border-radius: 12px;
+    }
+
+    .banner-mascot-img {
+        mask-image: none;
+        -webkit-mask-image: none;
+        border-radius: 12px;
+    }
 }
