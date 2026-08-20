@@ -7,14 +7,39 @@
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ProLaunch Academy | Cohort 21</title>
+    <title>ProLaunch Academy | Practical Digital Skills & Tech Training</title>
 
-    <!-- Plus Jakarta Sans -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+
+    <!-- Primary SEO Metadata -->
+    <meta name="description" content="ProLaunch Academy empowers ambitious individuals with practical digital skills, +4 weeks guaranteed internship placement, AWS certification vouchers, and 1-on-1 career mentorship. Explore Software Dev, Cloud Engineering, Data Analytics, and Digital Marketing.">
+    <meta name="keywords" content="ProLaunch Academy, Digital Skills Training, Tech Bootcamp Nigeria, Software Development Course, Cloud Engineering AWS, Data Analytics Training, Tech Internship Placement">
+    <meta name="author" content="ProLaunch Academy">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Preview (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://academy.prolaunchgroup.org/">
+    <meta property="og:title" content="ProLaunch Academy — Build Skills. Launch Your Future.">
+    <meta property="og:description" content="Gain practical digital skills, +4 weeks guaranteed internship placement, AWS exam voucher discounts, and career mentorship. Explore Software Dev, Cloud Engineering, Data Analytics & more.">
+    <meta property="og:image" content="assets/hero-image.jpg">
+    <meta property="og:image:alt" content="ProLaunch Academy Students Learning Tech Skills">
+    <meta property="og:site_name" content="ProLaunch Academy">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProLaunch Academy — Build Skills. Launch Your Future.">
+    <meta name="twitter:description" content="Gain practical digital skills, +4 weeks guaranteed internship placement, AWS exam voucher discounts, and career mentorship.">
+    <meta name="twitter:image" content="assets/hero-image.jpg">
+
+    <!-- Plus Jakarta Sans & Lora (Editorial Font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
     <!-- Font Awesome -->
@@ -30,6 +55,26 @@
 
 <body>
 
+    <!-- ================= ANNOUNCEMENT BANNER ================= -->
+
+    <div class="announcement-banner" id="announcement-banner">
+        <div class="banner-container">
+            <p class="banner-text">
+                🎉 <strong>FREE Tech Workshop</strong> — Saturday, August 22. Attend and get <strong>20% off</strong> any ProLaunch Academy program.
+            </p>
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfgPeFIBy1kJdK78Qjp--n3Fk8zLiZlfi1AGOgg0y5juOWoqg/viewform?usp=publish-editor"
+                class="banner-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Reserve Your Spot →
+            </a>
+        </div>
+        <button class="banner-close" id="close-banner" aria-label="Close announcement">✕</button>
+    </div>
+
+
     <!-- ================= NAVBAR ================= -->
 
     <header>
@@ -38,10 +83,12 @@
 
             <!-- Logo -->
             <div class="logo">
-                <img
-                    src="assets/logo.png"
-                    alt="ProLaunch Academy logo"
-                >
+                <a href="https://academy.prolaunchgroup.org">
+                    <img
+                        src="assets/logo.png"
+                        alt="ProLaunch Academy logo"
+                    >
+                </a>
             </div>
 
 
@@ -58,19 +105,22 @@
             <!-- Navigation Links -->
             <div class="nav-links">
 
+                <a href="#cohort-details">Workshop</a>
+
                 <a href="#about">About</a>
 
-                <a href="#programmes">Programmes</a>
+                <a href="#programmes">Programs</a>
 
                 <a href="#why-us">Why Us</a>
 
                 <a href="#contact">Contact</a>
 
                 <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfgPeFIBy1kJdK78Qjp--n3Fk8zLiZlfi1AGOgg0y5juOWoqg/viewform?usp=publish-editor"
+                    href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Register
+                    Join the Waitlist
                 </a>
 
             </div>
@@ -91,6 +141,15 @@
 
             <div class="hero-content">
 
+                <!-- Nova Mascot Greeting Badge -->
+                <div class="mascot-greeting">
+                    <img src="assets/Nova-greeting.jpg" alt="Nova - ProLaunch Academy Official Mascot" class="mascot-avatar">
+                    <div class="mascot-bubble">
+                        <span class="mascot-name">Hi, I'm <strong>Nova</strong>!</span>
+                        <p class="mascot-sub">Welcome to ProLaunch Academy</p>
+                    </div>
+                </div>
+
                 <p class="hero-tag">
                     DIGITAL SKILLS & TECHNOLOGY TRAINING
                 </p>
@@ -110,11 +169,12 @@
 
                 <!-- Registration Button -->
                 <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfgPeFIBy1kJdK78Qjp--n3Fk8zLiZlfi1AGOgg0y5juOWoqg/viewform?usp=publish-editor"
+                    href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY"
                     class="hero-button"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Register Now
+                    Join the Waitlist
                 </a>
 
             </div>
@@ -127,6 +187,102 @@
                     src="assets/hero-image.jpg"
                     alt="Students learning digital skills"
                 >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COHORT & WORKSHOP DETAILS ================= -->
+
+        <section class="cohort-details" id="cohort-details">
+
+            <div class="cohort-container">
+
+                <p class="section-label">
+                    00 — GET STARTED
+                </p>
+
+                <h2>
+                    Two Ways In: Free Workshop or Cohort 1
+                </h2>
+
+                <p class="subhead">
+                    Cohort 1 launches September 7, 2026. Get a head start — and a discount — by joining our free workshop first.
+                </p>
+
+                <div class="detail-cards">
+
+                    <!-- Card 1: Free Tech Workshop -->
+                    <div class="detail-card featured banner-card">
+
+                        <div class="banner-card-top">
+
+                            <div class="banner-card-text">
+                                <span class="tag tag-free">FREE · Aug 22</span>
+                                <h3>Virtual Tech Workshop</h3>
+
+                                <ul>
+                                    <li><i data-lucide="calendar"></i> Saturday, August 22, 2026</li>
+                                    <li><i data-lucide="sparkles"></i> Free, hands-on session — a real taste of the program</li>
+                                    <li><i data-lucide="percent"></i> <strong>Get 20% off</strong> any program when you attend</li>
+                                </ul>
+                            </div>
+
+                            <!-- Prominent Nova Mascot Image -->
+                            <div class="banner-mascot-wrapper">
+                                <img src="assets/Nova-explaining.jpg" alt="Nova Explaining Tech Workshop" class="banner-mascot-img">
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfgPeFIBy1kJdK78Qjp--n3Fk8zLiZlfi1AGOgg0y5juOWoqg/viewform?usp=publish-editor"
+                            class="btn btn-primary banner-cta-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Reserve Your Free Spot
+                        </a>
+
+                    </div>
+
+                    <!-- Card 2: Cohort 1 -->
+                    <div class="detail-card banner-card">
+
+                        <div class="banner-card-top">
+
+                            <div class="banner-card-text">
+                                <span class="tag tag-cohort">Cohort 1</span>
+                                <h3>September 7, 2026</h3>
+
+                                <ul>
+                                    <li><i data-lucide="users"></i> Limited spots — early sign-ups get priority</li>
+                                    <li><i data-lucide="file-text"></i> Applications reviewed on a rolling basis</li>
+                                    <li><i data-lucide="credit-card"></i> <strong>Flexible payment:</strong> Split fee into 3 installments</li>
+                                </ul>
+                            </div>
+
+                            <!-- Prominent Julian Mascot Image -->
+                            <div class="banner-mascot-wrapper">
+                                <img src="assets/Julian-teaching-1.jpg" alt="Julian Teaching Cohort 1" class="banner-mascot-img julian-img">
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY/viewform?usp=publish-editor"
+                            class="btn btn-secondary banner-cta-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Join the Waitlist
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -153,10 +309,13 @@
 
 
                 <p>
-                    ProLaunch Academy provides practical,
-                    industry-aligned training for people who want
-                    to build digital skills, earn credentials,
-                    and access better opportunities.
+                    ProLaunch Academy is a digital skills and technology 
+                    training institution oferring live bootcamps, 
+                    short courses, and certification programs in both 
+                    tech and non-tech disciplines. We provide practical,
+                    industry-aligned training and internship placements 
+                    for people who want to build digital skills, 
+                    earn credentials, and access better opportunities.
                 </p>
          </div>
             
@@ -169,192 +328,407 @@
 
         <section class="programmes" id="programmes">
 
-            <p class="section-label">
-                02 — PROGRAMMES
-            </p>
+            <div class="section-container">
+
+                <p class="section-label">
+                    02 — PROGRAMMES
+                </p>
 
 
-            <h2>
-                Build Skills For The Digital World
-            </h2>
+                <h2>
+                    Build Skills For The Digital World
+                </h2>
 
 
-            <p>
-                Explore practical programmes designed to
-                help you develop relevant digital skills.
-            </p>
+                <p class="section-subtext">
+                    Explore practical programmes designed to
+                    help you develop relevant digital skills and launch your career.
+                </p>
 
 
-            <div class="programme-list">
+                <div class="programme-list">
 
 
-                <!-- Software Development -->
-                <div class="programme-card">
+                    <!-- Software Development -->
+                    <div class="programme-card">
 
-                    <div class="programme-icon">
-                        <i data-lucide="laptop"></i>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-12w">12 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
+
+                        <div class="programme-icon">
+                            <i data-lucide="laptop"></i>
+                        </div>
+
+                        <h3>
+                            Software Development
+                        </h3>
+
+                        <p>
+                            Learn programming and build real-world digital products from scratch.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">HTML/CSS</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">React</span>
+                                <span class="skill-pill">Node.js</span>
+                                <span class="skill-pill">Git</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Software Development
-                    </h3>
 
-                    <p>
-                        Learn programming and build
-                        real-world digital products.
-                    </p>
+                    <!-- Cloud Engineering -->
+                    <div class="programme-card featured-cloud">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-12w">12 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon cloud-icon">
+                            <i data-lucide="cloud"></i>
+                        </div>
 
-                <!-- Cloud Computing -->
-                <div class="programme-card">
+                        <h3>
+                            Cloud Engineering
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="cloud"></i>
+                        <p>
+                            Develop practical cloud architecture, security, and DevOps skills.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Cloud Architecture</span>
+                                <span class="skill-pill">AWS</span>
+                                <span class="skill-pill">Linux</span>
+                                <span class="skill-pill">DevOps</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Voucher & Double Certification Highlight -->
+                        <div class="special-perk-box">
+                            <span class="perk-tag">🔥 AWS VOUCHER & DOUBLE CERTIFICATION</span>
+                            <p class="perk-text font-lora">
+                                Cloud Engineering students receive a <strong>massive voucher discount</strong> for the official AWS Cloud Practitioner exam + <strong>Double Certification</strong> on bootcamp completion.
+                            </p>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Cloud Computing
-                    </h3>
 
-                    <p>
-                        Develop practical cloud,
-                        security and DevOps skills.
-                    </p>
+                    <!-- Data Analytics -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-12w">12 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="chart-column"></i>
+                        </div>
 
-                <!-- Data Analytics -->
-                <div class="programme-card">
+                        <h3>
+                            Data Analytics
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="chart-column"></i>
+                        <p>
+                            Master data analysis, business intelligence, and data visualization.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Excel</span>
+                                <span class="skill-pill">SQL</span>
+                                <span class="skill-pill">Power BI</span>
+                                <span class="skill-pill">Data Viz</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Data Analytics
-                    </h3>
 
-                    <p>
-                        Learn Excel, SQL, Power BI
-                        and data analysis.
-                    </p>
+                    <!-- SEO Marketing -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="search"></i>
+                        </div>
 
-                <!-- SEO Marketing -->
-                <div class="programme-card">
+                        <h3>
+                            SEO Marketing
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="search"></i>
+                        <p>
+                            Learn how to improve search visibility and grow digital audiences.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Keyword Research</span>
+                                <span class="skill-pill">On-Page SEO</span>
+                                <span class="skill-pill">Analytics</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        SEO Marketing
-                    </h3>
 
-                    <p>
-                        Learn how to improve visibility
-                        and grow digital audiences.
-                    </p>
+                    <!-- Social Media Marketing -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="megaphone"></i>
+                        </div>
 
-                <!-- Social Media Marketing -->
-                <div class="programme-card">
+                        <h3>
+                            Social Media Marketing
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="megaphone"></i>
+                        <p>
+                            Learn how to create and manage effective social media strategies.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Content Strategy</span>
+                                <span class="skill-pill">Social Ads</span>
+                                <span class="skill-pill">Community</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Social Media Marketing
-                    </h3>
 
-                    <p>
-                        Learn how to create and manage
-                        effective social media strategies.
-                    </p>
+                    <!-- Email Marketing -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
 
-                <!-- Email Marketing -->
-                <div class="programme-card">
+                        <h3>
+                            Email Marketing
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="mail"></i>
+                        <p>
+                            Learn how to create effective email campaigns and automated workflows.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Copywriting</span>
+                                <span class="skill-pill">Automations</span>
+                                <span class="skill-pill">Mailchimp</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Email Marketing
-                    </h3>
 
-                    <p>
-                        Learn how to create effective
-                        email campaigns.
-                    </p>
+                    <!-- Graphics Design -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
 
-                <!-- Graphics Design -->
-                <div class="programme-card">
+                        <h3>
+                            Graphics Design
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="palette"></i>
+                        <p>
+                            Build creative design skills and visual identity for digital platforms.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Brand Identity</span>
+                                <span class="skill-pill">Canva</span>
+                                <span class="skill-pill">Photoshop</span>
+                                <span class="skill-pill">Visuals</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        Graphics Design
-                    </h3>
 
-                    <p>
-                        Build creative design skills
-                        for digital platforms.
-                    </p>
+                    <!-- WordPress -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="globe"></i>
+                        </div>
 
-                <!-- WordPress -->
-                <div class="programme-card">
+                        <h3>
+                            WordPress Development
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="globe"></i>
+                        <p>
+                            Learn how to create and manage professional custom websites.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">WP Themes</span>
+                                <span class="skill-pill">Elementor</span>
+                                <span class="skill-pill">WooCommerce</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
 
-                    <h3>
-                        WordPress Development
-                    </h3>
 
-                    <p>
-                        Learn how to create and manage
-                        professional websites.
-                    </p>
+                    <!-- Technical Support -->
+                    <div class="programme-card">
 
-                </div>
+                        <div class="card-meta">
+                            <span class="duration-badge badge-6w">6 WEEKS</span>
+                            <span class="internship-tag">+4 WKS INTERNSHIP</span>
+                        </div>
 
+                        <div class="programme-icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
 
-                <!-- Technical Support -->
-                <div class="programme-card">
+                        <h3>
+                            Technical Support
+                        </h3>
 
-                    <div class="programme-icon">
-                        <i data-lucide="headphones"></i>
+                        <p>
+                            Develop practical skills for supporting digital users and IT systems.
+                        </p>
+
+                        <div class="core-skills">
+                            <span class="skills-label">Core Skills:</span>
+                            <div class="skills-tags">
+                                <span class="skill-pill">Troubleshooting</span>
+                                <span class="skill-pill">IT Helpdesk</span>
+                                <span class="skill-pill">Systems Admin</span>
+                            </div>
+                        </div>
+
+                        <ul class="card-perks-list">
+                            <li><i data-lucide="check-circle-2"></i> +4 Weeks Internship Placement</li>
+                            <li><i data-lucide="check-circle-2"></i> Career Grooming & Mentorship</li>
+                        </ul>
+
+                        <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" class="enroll-btn" target="_blank">
+                            Enroll Now
+                        </a>
+
                     </div>
-
-                    <h3>
-                        Technical Support
-                    </h3>
-
-                    <p>
-                        Develop practical skills for
-                        supporting digital users and systems.
-                    </p>
 
                 </div>
 
@@ -368,73 +742,92 @@
 
         <section class="why-us" id="why-us">
 
-            <p class="section-label">
-                03 — WHY PROLAUNCH?
-            </p>
+            <div class="section-container">
+
+                <p class="section-label">
+                    03 — WHY PROLAUNCH ACADEMY?
+                </p>
 
 
-            <h2>
-                More Than Learning.
-                A Step Toward Your Future.
-            </h2>
+                <h2>
+                    More Than Learning.
+                    A Step Toward Your Future.
+                </h2>
 
 
-            <div class="benefits">
+                <div class="benefits">
 
 
-                <!-- Benefit 1 -->
-                <div class="benefit-card">
+                    <!-- Benefit 1 -->
+                    <div class="benefit-card">
 
-                    <div class="benefit-icon">
-                        <i data-lucide="briefcase-business"></i>
+                        <div class="benefit-icon">
+                            <i data-lucide="briefcase-business"></i>
+                        </div>
+
+                        <h3>
+                            Practical Learning
+                        </h3>
+
+                        <p>
+                            Learn through hands-on practical projects, live environments, and real-world applications.
+                        </p>
+
                     </div>
 
-                    <h3>
-                        Practical Learning
-                    </h3>
 
-                    <p>
-                        Learn through practical projects
-                        and real-world applications.
-                    </p>
+                    <!-- Benefit 2 -->
+                    <div class="benefit-card">
 
-                </div>
+                        <div class="benefit-icon">
+                            <i data-lucide="badge-check"></i>
+                        </div>
 
+                        <h3>
+                            Industry-Aligned Skills
+                        </h3>
 
-                <!-- Benefit 2 -->
-                <div class="benefit-card">
+                        <p>
+                            Develop in-demand digital competencies tailored directly to today's workplace requirements.
+                        </p>
 
-                    <div class="benefit-icon">
-                        <i data-lucide="badge-check"></i>
                     </div>
 
-                    <h3>
-                        Industry-Aligned Skills
-                    </h3>
 
-                    <p>
-                        Develop relevant skills designed
-                        around today's digital workplace.
-                    </p>
+                    <!-- Benefit 3 -->
+                    <div class="benefit-card">
 
-                </div>
+                        <div class="benefit-icon">
+                            <i data-lucide="award"></i>
+                        </div>
 
+                        <h3>
+                            Sharable Milestone Badges
+                        </h3>
 
-                <!-- Benefit 3 -->
-                <div class="benefit-card">
+                        <p>
+                            Earn verified digital milestone badges at every achievement stage to showcase your competence on LinkedIn.
+                        </p>
 
-                    <div class="benefit-icon">
-                        <i data-lucide="rocket"></i>
                     </div>
 
-                    <h3>
-                        Career Growth
-                    </h3>
 
-                    <p>
-                        Build the skills and confidence
-                        to move forward professionally.
-                    </p>
+                    <!-- Benefit 4 -->
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+
+                        <h3>
+                            Internships & Mentorship
+                        </h3>
+
+                        <p>
+                            Get +4 weeks real-world internship placement plus 1-on-1 career grooming and ongoing guidance.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -462,12 +855,79 @@
 
 
                 <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfgPeFIBy1kJdK78Qjp--n3Fk8zLiZlfi1AGOgg0y5juOWoqg/viewform?usp=publish-editor"
+                    href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY"
                     class="hero-button"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Register Now
+                    Join the Waitlist
                 </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="contact-container">
+
+                <p class="section-label">
+                    04 — GET IN TOUCH
+                </p>
+
+                <h2>
+                    Questions Before You Register?
+                </h2>
+
+                <p class="subhead">
+                    Reach out — we usually reply within few minutes.
+                </p>
+
+                <div class="contact-options">
+
+                    <a
+                        href="https://wa.me/2348012345678?text=Hi!%20I'd%20like%20to%20know%20more%20about%20ProLaunch%20Academy"
+                        class="contact-btn whatsapp-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+
+                    <a
+                        href="mailto:academy@prolaunchgroup.org"
+                        class="contact-btn email-btn"
+                    >
+                        <i class="fa-regular fa-envelope"></i> academy@prolaunchgroup.org
+                    </a>
+
+                </div>
+
+                <div class="contact-social-links">
+
+                    <a
+                        href="https://www.linkedin.com/company/prolaunch-academy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="ProLaunch Academy on LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+
+                    <a
+                        href="https://facebook.com/prolaunchacademy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="ProLaunch Academy on Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+
+                </div>
 
             </div>
 
@@ -476,59 +936,143 @@
     </main>
 
 
-
     <!-- ================= FOOTER ================= -->
 
-    <footer id="contact">
+    <footer id="footer">
 
-        <div class="footer-content">
+        <div class="footer-container">
 
-            <div class="footer-logo">
+            <!-- Column 1: Footer Brand -->
+            <div class="footer-brand">
 
                 <img
-                    src="assets/logo.png"
+                    src="assets/logo-white.png"
                     alt="ProLaunch Academy logo"
+                    class="footer-logo"
                 >
+
+                <p>
+                    ProLaunch Academy empowers individuals with practical, industry-led digital skills training, internship placements, and career grooming.
+                </p>
+
+                <span class="footer-subsidiary">A subsidiary of <strong>ProLaunch Group</strong></span>
 
             </div>
 
 
-            <p>
-                Your Path to Digital Transformation.
-            </p>
+            <!-- Column 2: Navigation Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#about">About Us</a>
+
+                <a href="#cohort-details">Workshop & Cohort</a>
+
+                <a href="#programmes">Programmes</a>
+
+                <a href="#why-us">Why ProLaunch</a>
+
+                <a href="#contact">Contact Support</a>
+
+                <a href="https://docs.google.com/forms/d/19k2KQrQ31vMqpNP9krSGReiu26hLy33dPTLy11noICY" target="_blank">Join Waitlist</a>
+
+            </div>
 
 
-            <!-- Social Links -->
-            <div class="social-links">
+            <!-- Column 3: Programmes -->
+            <div class="footer-column">
 
-                <a
-                    href="https://www.linkedin.com/company/prolaunch-academy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="ProLaunch Academy on LinkedIn"
-                >
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <h3>Programmes</h3>
+
+                <a href="#programmes">Software Development</a>
+
+                <a href="#programmes">Cloud Engineering</a>
+
+                <a href="#programmes">Data Analytics</a>
+
+                <a href="#programmes">SEO Marketing</a>
+
+                <a href="#programmes">Social Media Marketing</a>
+
+                <a href="#programmes">Graphics Design</a>
+
+            </div>
+
+
+            <!-- Column 4: Get In Touch & Social Icons -->
+            <div class="footer-column">
+
+                <h3>Get In Touch</h3>
+
+                <a href="mailto:academy@prolaunchgroup.org" class="footer-contact-item">
+                    <i class="fa-regular fa-envelope"></i> academy@prolaunchgroup.org
                 </a>
 
-                <a
-                    href="https://facebook.com/prolaunchacademy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="ProLaunch Academy on Facebook"
-                >
-                    <i class="fa-brands fa-facebook-f"></i>
+                <a href="https://wa.me/2348154563245?text=Hi!%20I'd%20like%20to%20know%20more%20about%20ProLaunch%20Academy" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                 </a>
 
-            </div>            
+                <div class="footer-social-icons">
 
+                    <a
+                        href="https://www.linkedin.com/company/prolaunch-academy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                        href="https://facebook.com/prolaunchacademy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
 
             <p>
-                © 2026 ProLaunch Academy
+                © 2026 ProLaunch Academy. All rights reserved.
             </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Service</a>
+
+            </div>
 
         </div>
 
     </footer>
+
+
+
+    <!-- ================= FLOATING WHATSAPP CTA ================= -->
+
+    <a
+        href="https://wa.me/2348154563245?text=Hi!%20I'd%20like%20to%20know%20more%20about%20ProLaunch%20Academy"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 
 
@@ -543,7 +1087,7 @@
 
     <!-- ================= JAVASCRIPT ================= -->
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
