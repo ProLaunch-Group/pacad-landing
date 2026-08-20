@@ -1537,8 +1537,18 @@ section h2 {
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
 }
 
+.banner-mascot-img.julian-img {
+    object-position: top 5% center;
+    transform: scale(1.4);
+    transform-origin: top center;
+}
+
 .detail-card.banner-card:hover .banner-mascot-img {
     transform: scale(1.05);
+}
+
+.detail-card.banner-card:hover .banner-mascot-img.julian-img {
+    transform: scale(1.48);
 }
 
 .banner-cta-btn {
