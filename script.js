@@ -72,3 +72,79 @@ if (menuBtn && navLinks) {
         });
     });
 }
+
+
+/* =========================
+   FAQ ACCORDION, TABS & SEARCH
+   ========================= */
+
+const faqItems = document.querySelectorAll(".faq-item");
+const faqTabs = document.querySelectorAll(".faq-tab");
+const faqGroups = document.querySelectorAll(".faq-group");
+const faqSearchInput = document.getElementById("faq-search");
+const faqEmptyState = document.getElementById("faq-empty-state");
+
+if (faqItems.length > 0) {
+    // Accordion toggle
+    faqItems.forEach(item => {
+        const btn = item.querySelector(".faq-question");
+        if (!btn) return;
+
+        btn.addEventListener("click", () => {
+            const isOpen = item.classList.toggle("open");
+            btn.setAttribute("aria-expanded", String(isOpen));
+        });
+    });
+
+    let activeCategory = "all";
+
+    const filterFaqs = () => {
+        const query = faqSearchInput ? faqSearchInput.value.trim().toLowerCase() : "";
+        let totalVisible = 0;
+
+        faqGroups.forEach(group => {
+            const groupCategory = group.getAttribute("data-group");
+            const itemsInGroup = group.querySelectorAll(".faq-item");
+            let visibleInGroup = 0;
+
+            itemsInGroup.forEach(item => {
+                const matchesCategory = activeCategory === "all" || groupCategory === activeCategory;
+                const text = item.textContent.toLowerCase();
+                const matchesSearch = !query || text.includes(query);
+
+                if (matchesCategory && matchesSearch) {
+                    item.style.display = "";
+                    visibleInGroup++;
+                    totalVisible++;
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            group.style.display = visibleInGroup > 0 ? "" : "none";
+        });
+
+        if (faqEmptyState) {
+            faqEmptyState.hidden = totalVisible > 0;
+        }
+    };
+
+    // Category tabs
+    faqTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            faqTabs.forEach(t => {
+                t.classList.remove("active");
+                t.setAttribute("aria-selected", "false");
+            });
+            tab.classList.add("active");
+            tab.setAttribute("aria-selected", "true");
+            activeCategory = tab.getAttribute("data-category") || "all";
+            filterFaqs();
+        });
+    });
+
+    // Live search
+    if (faqSearchInput) {
+        faqSearchInput.addEventListener("input", filterFaqs);
+    }
+}
