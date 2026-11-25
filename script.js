@@ -148,3 +148,54 @@ if (faqItems.length > 0) {
         faqSearchInput.addEventListener("input", filterFaqs);
     }
 }
+
+
+/* =========================
+   CLEAN PATH SECTION ROUTING
+   (/home, /programs, /scholarship)
+   ========================= */
+
+const sectionRoutes = {
+    "/home": "home",
+    "/programs": "programmes",
+    "/scholarship": "scholarship"
+};
+
+const scrollToRouteSection = (pathname, smooth = true) => {
+    const cleanPath = pathname.replace(/\/+$/, "") || "/";
+    const targetId = sectionRoutes[cleanPath];
+    if (!targetId) return false;
+
+    const targetEl = document.getElementById(targetId);
+    if (!targetEl) return false;
+
+    targetEl.scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
+    return true;
+};
+
+// Scroll automatically when landing directly on /home, /programs, or /scholarship
+window.addEventListener("DOMContentLoaded", () => {
+    const cleanPath = window.location.pathname.replace(/\/+$/, "") || "/";
+    if (sectionRoutes[cleanPath]) {
+        // Small delay so fonts/layout settle before scrolling
+        setTimeout(() => scrollToRouteSection(cleanPath, true), 80);
+    }
+});
+
+// Intercept in-page clicks to /home, /programs, /scholarship when already on index.html
+document.querySelectorAll('a[href="/home"], a[href="/programs"], a[href="/scholarship"]').forEach(link => {
+    link.addEventListener("click", (e) => {
+        const href = link.getAttribute("href");
+        if (scrollToRouteSection(href, true)) {
+            e.preventDefault();
+            if (window.location.pathname !== href) {
+                window.history.pushState(null, "", href);
+            }
+        }
+    });
+});
+
+// Support browser Back/Forward buttons for clean section routes
+window.addEventListener("popstate", () => {
+    scrollToRouteSection(window.location.pathname, true);
+});

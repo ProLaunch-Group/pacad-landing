@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/home", "destination": "/index.html" },
+    { "source": "/programs", "destination": "/index.html" },
+    { "source": "/scholarship", "destination": "/index.html" }
+  ]
+}
